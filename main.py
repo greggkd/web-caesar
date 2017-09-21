@@ -21,15 +21,22 @@ form="""
                 textarea {
                     margin: 10px 0;
                     width: 540px;
-                    height: 520px;
+                    height: 120px;
+                }
+                p.error{
+                    color: red;
                 }
             </style>
         </head>
         <body>
             <form action="/" method="post">
-                <label for="rot">Rotate by:</label>
-                <input type="text" name="rot" />
-                <input type="textarea" name="text" />
+                <div>
+                    <label for="rot">Rotate by:</label>
+                    <input type="text" name="rot" value="0" />
+                    <p class="error"></p>
+                </div>
+                <textarea type="text" name="text"></textarea>
+                <br>
                 <input type="submit">
             </form>
         </body>
