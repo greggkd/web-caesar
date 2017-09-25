@@ -33,7 +33,7 @@ form="""
                     <input type="text" name="rot" value="0" />
                     <p class="error"></p>
                 </div>
-                <textarea type="text" name="text">{0}</textarea>
+                <textarea name="text">{0}</textarea>
                 <br>
                 <input type="submit">
             </form>
@@ -58,4 +58,4 @@ def encrypt():
 
 
     
-app.run()
+app.run()   
